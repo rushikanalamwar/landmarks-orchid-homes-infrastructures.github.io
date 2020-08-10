@@ -65,6 +65,7 @@
 		#roman{
 			width: 310px;
 			height: 110px;
+			margin-left: 10px;
 		}
 		.emraldb{
 				margin-top: 165px;			
@@ -102,6 +103,30 @@
 			padding-right: 10px;
 			
 		}
+		.promoter{
+			display: none;
+		}
+		.promoterdesktop{
+			text-align:center ;
+			color: white;
+			margin-right: 25px;
+			/* float: right; */
+			margin-top: 30px;
+			margin-left: 80%;
+			/* float: right; */
+			/* position: absolute; */
+			/* right: -10; */
+			
+		}
+		.medesktop{
+			margin-left: 100%; 
+			margin-top: 20px; 
+			width: 200px;
+			color: whitesmoke;
+		}
+		.me{
+			float: right;
+		}
 		@media screen and (max-width: 736px){
 			div#header::after{
 				height: 100%;
@@ -113,6 +138,15 @@
 			.sapphireb{
 				margin-top: 0px;
 			}
+			.promoter{
+				/* display: block; */
+			/* text-align:right ; */
+			color: white;
+			margin-right: 15px;
+			}
+			.promoterdesktop{
+				display: none
+			}
 			#brochure{
 			background-color: rgb(33, 9, 37);
 			text-align: center;
@@ -121,6 +155,12 @@
 			}
 			.brobtn{
 			text-align: center;
+			}
+			.medesktop{
+			margin-left: 0px; 
+			margin-top: 30px; 
+			width: 200px;
+			color: whitesmoke;
 			}
 		}
 		@media screen and (max-width: 600px){
@@ -136,6 +176,7 @@
 			.sapphireb{
 				margin-top: 0px;
 			}
+			
 			#brochure{
 			background-color: rgb(33, 9, 37);
 			text-align: center;
@@ -144,7 +185,32 @@
 			.brobtn{
 			text-align: center;
 			}
+			.promoter{
+				display: block;
+			text-align:center ;
+			color: white;
+			/* margin-right: 15px; */
+		 	}
+			div.promoter{
+				/* text-align: center; */
+				float: right;
+
+			}
+			.medesktop{
+			margin-left: 0px; 
+			margin-top: 30px; 
+			width: 200px;
+			color: whitesmoke;
+			}
 			
+		}
+		@media screen and (max-width: 900px){
+			.medesktop{
+			margin-left: 0px; 
+			margin-top: 30px; 
+			width: 200px;
+			color: whitesmoke;
+			}
 		}
 		
 	</style>
@@ -155,7 +221,11 @@
 				<div id="header">
 
 					<!-- Inner -->
-						<div class="inner" >
+					<div class="promoter">
+					<h6 class="promoter"> PROMOTORS:- <br>VINOD NALAMWAR <br> MANJUSHA NALAMWAR</h6> 
+					
+					</div>
+					<div class="inner" >
 							<header>
 								<img id='roman' src="images/landmark2.png" alt="">
 								<h1><a href="index.html" id="logo">LANDMARKS ORCHID HOMES<br> INFRAVENTURES</a></h1>
@@ -164,7 +234,14 @@
 							</header>
 							<footer>
 								<a href="#banner" class="button circled scrolly">Start</a>
+
+								<!-- <h6 class="promoter" style="margin-left: 50%; margin-top: 40px; width: 200px;"  >  DEVELOPED BY- <br> RUSHIKA NALAMWAR</h6>  -->
+								<!-- <h6 class="promoterdesktop" style="margin-left: 100%; margin-top: 20px; width: 200px;"  >  DEVELOPED BY- <br> RUSHIKA NALAMWAR</h6> 								 -->
 							</footer>
+							<div class="me">
+							<h6 class="medesktop"   >  DEVELOPED BY- <br> RUSHIKA NALAMWAR</h6> 
+							</div>								
+
 						</div>
 
 					<!-- Nav -->
@@ -175,9 +252,11 @@
 								<li><a href="contact.html">Contact </a></li>
 								<li><a href="project.html">Our Projects</a></li>
 							</ul>
+							<h6  class="promoterdesktop">PROMOTERS:- <br>VINOD NALAMWAR <br> MANJUSHA NALAMWAR</h6> 
 						</nav>
 
 				</div>
+				
 
 			<!-- Banner -->
 				<section id="banner">
