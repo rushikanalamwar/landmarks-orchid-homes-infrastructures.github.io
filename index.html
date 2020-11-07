@@ -11,6 +11,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+		
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- <script src="particles.js"></script> -->
 	</head>
@@ -135,6 +138,27 @@
 		.twoBuild{
 			width: 65%; 
 			margin: 0 auto;
+		}
+		.fixed-action-btn{
+			/* position: fixed; */
+			/* float: right; */
+			font-size: 50px;
+			position:fixed;
+			width:60px;
+			height:60px;
+			bottom:25px;
+			right:15px;
+			background-color:#25d366;
+			color:#FFF;
+			border-radius:50px;
+			text-align:center;
+			font-size:30px;
+			/* box-shadow: 2px 2px 3px #999; */
+			z-index:100;
+			/* margin-left: 15px; */
+		}
+		.whtsapp{
+			margin-top: 15px;
 		}
 		@media screen and (max-width: 736px){
 			div#header::after{
@@ -846,6 +870,11 @@
 
 						</div>
 						<hr />
+							<div class="fixed-action-btn">
+								<a class="btn-floating btn-large green lighten-2 whtsapp" href="https://wa.me/+919822200770?text=I%20was%20exploring%20the%20website.%20Would %20like%20to%20know%20more.">
+									<i class="fab fa-whatsapp whtsapp"></i>
+								</a>
+							</div>
 						<div class="row">
 							<div class="col-12">
 
